@@ -1,6 +1,6 @@
 alert('hello')
 
-const array = [1,5,7,3]
+const array = [1,5,7,3,2,3,7]
 
 const sum = array.reduce((a, b) => a + b)
 
@@ -22,3 +22,16 @@ const isPalindrome = (word) => {
 }
 
 console.log(`isPalindrome ${isPalindrome('cat')}`)
+
+
+/**
+ * Remove Duplicates from array
+ */
+
+const arrayUpdated = a => [...new Set(a)]
+
+console.log(`${arrayUpdated(array)}`)
+
+const uniqueArray = a => a.filter((el,i) => a.indexOf(el) === i)
+
+console.log(uniqueArray(array))
